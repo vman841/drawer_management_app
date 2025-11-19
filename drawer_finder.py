@@ -30,7 +30,7 @@ def load_users():
         # Initialize with a default admin
         default_users = {
             ADMIN_USER: {
-                "name": "System Admin",
+                "name": "sysAdmin",
                 "password": make_hashes(DEFAULT_ADMIN_PASS),
                 "role": "admin"
             }
@@ -223,7 +223,7 @@ if __name__ == '__main__':
     
     # Initialize session state
     if 'logged_in' not in st.session_state:
-        st.session_state['logged_in'] = True
+        st.session_state['logged_in'] = False
 
     if not st.session_state['logged_in']:
         login_page()

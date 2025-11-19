@@ -223,7 +223,7 @@ if __name__ == '__main__':
     
     # Initialize session state
     if 'logged_in' not in st.session_state:
-        st.session_state['logged_in'] = False
+        st.session_state['logged_in'] = True
 
     if not st.session_state['logged_in']:
         login_page()
